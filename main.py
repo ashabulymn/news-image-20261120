@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Write the 20 November 2026 world-news front page to /output/entry.png.
 
-v1.6: a premium one-page newspaper (editorial design study: deep navy
-masthead, warm ivory background, restrained crimson accents). 40 stories,
-every one first reported on Friday 20 November 2026: three hero panels
-(Cyclone Akvan as the tall lead, Trump deferring the Iran decision with
-a big red 2027, the Asian market plunge), eight secondary news cards in
-a 4x2 grid, a world map with numbered pins 1-11, and a 29-item summary
-list of further stories.
+v3.2: a premium one-page newspaper (editorial design study: warm
+newsprint background, the date itself as the giant masthead headline,
+a six-number KPI ticker, and a region bar counting stories per region).
+34 stories, every one first reported on Friday 20 November 2026:
+three symmetric hero panels (Kyiv bridges struck, Cyclone Akvan
+landfall, the Asia AI sell-off) with original illustrations generated
+in-session, ten illustrated briefing cards in a 2x5 grid, a dark-ocean
+world map with numbered pins 1-13 plus regional dots, and a
+three-column Regional Dispatches wire.
 
 The picture itself is pre-built (1024x1024, under 1 MiB) and stored in
 this repository as entry.png. This program only copies it, with no
