@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Write the 20 November 2026 world-news front page to /output/entry.png.
 
+v1.7: a premium one-page newspaper rebuilt in-session from a reference
+layout (globe masthead, three photo heroes, twelve Global Developments
+cards with date checks, world map with a numbered index). 23 stories,
+every one first reported on Friday 20 November 2026.
+
 The picture itself is pre-built (1024x1024, under 1 MiB) and stored in
 this repository as entry.png. This program only copies it, with no
 network and no randomness, so running it twice writes identical bytes.
