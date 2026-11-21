@@ -15,9 +15,14 @@ OUT = Path("/output/entry.png")
 
 
 def main():
+    if not SRC.exists():
+        raise SystemExit(f"missing entry image: {SRC}")
+    src_digest = hashlib.sha256(SRC.read_bytes()).hexdigest()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(SRC, OUT)
     digest = hashlib.sha256(OUT.read_bytes()).hexdigest()
+    if digest != src_digest or OUT.stat().st_size != SRC.stat().st_size:
+        raise SystemExit("copied entry.png does not match the source")
     print(f"entry.png sha256: {digest}")
     print(f"entry.png bytes: {OUT.stat().st_size}")
 
